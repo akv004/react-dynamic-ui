@@ -8,16 +8,16 @@ type PropsType = {
 
 const Wrapper = styled.section`
   padding: 4em;
-  background: papayawhip;
+  background: green;
 `;
 
-export const A = React.memo((props: PropsType) => {
+export const B = React.memo((props: PropsType) => {
   const [messages, setMessages] = React.useState<any>([]);
 
   return (
     <Wrapper>
       <div>
-        <h1>Component A</h1>
+        <h1>Component B</h1>
       </div>
     </Wrapper>
   );
